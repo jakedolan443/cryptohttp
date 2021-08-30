@@ -1,0 +1,47 @@
+table.table_app {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.table_app td, table.table_app th {
+  padding: 2px 4px;
+}
+table.table_app tbody td {
+  font-size: 20px;
+}
+table.table_app tbody tr:hover {
+    background-color: #e3e3e3;
+}
+table.table_app thead {
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+}
+table.table_app thead th {
+  font-size: 23px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+}
+table.table_app tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+table.table_app tfoot td {
+  font-size: 14px;
+}
+.button_app {
+  background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+}
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+

@@ -1,0 +1,2 @@
+cryptowatch-sdk
+flask
