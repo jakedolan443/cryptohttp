@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/smoothness/jquery-ui.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<font size="2" face="Courier New" >
+<a href="https://github.com">View Source</a>
+<br>
+<table id="cryptotable" class="table_app sortable" style="width: 55%; margin-top: 30px; table-layout:fixed " align="center" >
+<tr>
+<thead>
+<th class="disable-select">Icon</th>
+<th class="disable-select">Code</th>
+<th class="disable-select">Name</th>
+<th class="disable-select">Price</th>
+<th class="disable-select">Change</th>
+</thead>
+</tr>
+{% for entry in data %}
+<tr>
+<td><img src="{{ entry['img'] }}"></img></td>
+<td class="disable-select">{{ entry['code'] }}</td>
+<td class="disable-select">{{ entry['name'] }}</td>
+<td class="disable-select">{{ entry['price'] }}</td>
+<td class="disable-select" style="color:{{ entry['change_colour'] }}">{{ entry['change'] }}</td>
+</tr>
+{% endfor %}
+<br>
+</font>
