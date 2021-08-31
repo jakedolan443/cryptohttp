@@ -15,9 +15,15 @@ cd cryptohttp
 ```
 To run cryptohttp:
 ```
-python3 main.py
+./cryptohttp
 ```
-cryptohttp runs on port localhost:8080. This can be changed in `main.py`
+Type `./cryptohttp --help` for more options.
+
+The default interface is 0.0.0.0
+
+The default port is 8080.
+
+The default refresh rate is 3600secs.
 
 The file `coins.conf` contains a line by line list of coins, in order, displayed on the webserver, e.g.
 ```
