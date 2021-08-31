@@ -19,16 +19,15 @@ python3 main.py
 ```
 cryptohttp runs on port localhost:8080. This can be changed in `main.py`
 
-The file `coins.conf` contains a line by line list of coins supported; you may remove any line to display only certain coins. A sample configuration file could be:
+The file `coins.conf` contains a line by line list of coins, in order, displayed on the webserver, e.g.
 ```
 BTC
 ETH
 XMR
 ```
-which would display Bitcoin, Ethereum and Monero.
 ## To do
 I created this small project after becoming frustrated with the lack of available web apps for viewing simple crypto market data. I wanted something minimalist and simple that could run on relatively low resources, which I could self-host. This project is in need of contribution.
-- Add support for multiple currencies via an external library
+- Add support for multiple fiat currencies via an external library
 - Create neater setup script
 - Add sorting ability to tables
 - Add support for more coins
