@@ -3,7 +3,7 @@ import sys
 from server import Server
 
 
-help_menu = "USAGE: ./cryptohttp <ARGS>\n  --host <HOST>\t\thost to bind to, default 0.0.0.0\n  --port <PORT>\t\tport to bind to, default 8080\n  --refresh <RATE>\thow often to refresh API data, in seconds, default 3600"
+help_menu = "USAGE: ./cryptohttp <ARGS>\n  --host <HOST>\t\thost to bind to, default 0.0.0.0\n  --port <PORT>\t\tport to bind to, default 8080\n  --refresh <RATE>\thow often to refresh API data, in seconds, default 3600\n  --detach\t\trun cryptohttp in the background."
 
 host = "0.0.0.0"
 port = 8080
