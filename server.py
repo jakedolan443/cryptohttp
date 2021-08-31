@@ -43,7 +43,7 @@ class Server:
             ls.append(d)
         self.__cache = ls.copy()
         time.sleep(self.refresh_rate)
-        fetch_new_data()
+        self.fetch_new_data()
         
     def get_data(self):
         return self.__cache
