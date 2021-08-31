@@ -1,6 +1,6 @@
 # CryptoHTTP
 A minimalist, self-hosted web app for viewing cryptocurrency data.
-[Demo](Demo)
+[Demo](http://135.181.148.230:38505/)
 
 ![enter image description here](https://raw.githubusercontent.com/jakedolan443/cryptohttp/main/screenshots/screenshot.png)
 CryptoHTTP is a Flask webserver which uses the `cryptowatch-sdk` module with Kraken's API to deliver a simplistic, minimalist dashboard showing current market data.
