@@ -1,5 +1,5 @@
 #!/bin/bash
-pip3 install -r requirements.txt
 
-echo "python3 main.py \$@" | tee cryptohttp
+
+pip3 install -r requirements.txt
 chmod +x cryptohttp

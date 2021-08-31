@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+if [[ $@ =~ "--detach" ]]
+then
+  nohup python3 main.py $@ >/dev/null 2>&1 &
+else
+  python3 main.py $@
+fi
