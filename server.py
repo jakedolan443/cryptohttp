@@ -7,7 +7,7 @@ class Server:
     def __init__(self, refresh_rate):
         self.refresh_rate = refresh_rate
         self.__coins = ["AAVE","ALGO","BTC","BCH","ADA","LINK","DASH","DOGE","ETH","ETC","LTC","XRP","XLM","XMR","ZEC"]
-        self.__coin_names = {"AAVE":"AAVE", "ALGO":"ALGORAND", "BTC":"BITCOIN", "BCH":"BITCOIN CASH", "ADA":"CARDANO", "LINK":"CHAINLINK", "DASH":"DASH", "DOGE":"DOGECOIN", "ETH":"ETHEREUM", "ETC":"ETHEREUM CLASSIC", "LTC":"LITECOIN", "XRP":"RIPPLE", "XLM":"XLM", "XMR":"MONERO", "ZEC":"ZEC"}
+        self.__coin_names = {"AAVE":"AAVE", "ALGO":"ALGORAND", "BTC":"BITCOIN", "BCH":"BITCOIN CASH", "ADA":"CARDANO", "LINK":"CHAINLINK", "DASH":"DASH", "DOGE":"DOGECOIN", "ETH":"ETHEREUM", "ETC":"ETHEREUM CLASSIC", "LTC":"LITECOIN", "XRP":"RIPPLE", "XLM":"STELLAR", "XMR":"MONERO", "ZEC":"ZCASH"}
         self.__cache = []
         
         threading.Thread(target=self.fetch_new_data).start()
