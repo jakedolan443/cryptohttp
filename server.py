@@ -3,7 +3,8 @@ import threading
 
 
 class Server:
-    def __init__(self):
+    def __init__(self, refresh_rate):
+        self.refresh_rate = refresh_rate
         self.__coins = ["AAVE","ALGO","BTC","BCH","ADA","LINK","DASH","DOGE","ETH","ETC","LTC","XRP","XLM","XMR","ZEC"]
         self.__coin_names = {"AAVE":"AAVE", "ALGO":"ALGORAND", "BTC":"BITCOIN", "BCH":"BITCOIN CASH", "ADA":"CARDANO", "LINK":"CHAINLINK", "DASH":"DASH", "DOGE":"DOGECOIN", "ETH":"ETHEREUM", "ETC":"ETHEREUM CLASSIC", "LTC":"LITECOIN", "XRP":"RIPPLE", "XLM":"XLM", "XMR":"MONERO", "ZEC":"ZEC"}
         self.__cache = []
@@ -40,7 +41,7 @@ class Server:
             d['name'] = self.__coin_names[coin]
             ls.append(d)
         self.__cache = ls.copy()
-        time.sleep(3600)
+        time.sleep(self.refresh_rate)
         fetch_new_data()
         
     def get_data(self):
