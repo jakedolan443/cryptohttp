@@ -1,13 +1,16 @@
 import cryptowatch as cw
 import threading
 import time
+import json
 
 
 class Server:
     def __init__(self, refresh_rate):
         self.refresh_rate = refresh_rate
-        self.__coins = ["AAVE","ALGO","BTC","BCH","ADA","LINK","DASH","DOGE","ETH","ETC","LTC","XRP","XLM","XMR","ZEC"]
-        self.__coin_names = {"AAVE":"AAVE", "ALGO":"ALGORAND", "BTC":"BITCOIN", "BCH":"BITCOIN CASH", "ADA":"CARDANO", "LINK":"CHAINLINK", "DASH":"DASH", "DOGE":"DOGECOIN", "ETH":"ETHEREUM", "ETC":"ETHEREUM CLASSIC", "LTC":"LITECOIN", "XRP":"RIPPLE", "XLM":"STELLAR", "XMR":"MONERO", "ZEC":"ZCASH"}
+        with open("coins.json", "r") as f:
+            data = f.read()
+        self.__coins = list(json.loads(data).keys())
+        self.__coin_names = json.loads(data)
         self.__cache = []
         
         threading.Thread(target=self.fetch_new_data).start()
@@ -29,7 +32,7 @@ class Server:
             req = cw.markets.get("KRAKEN:{}USD".format(coin))
             data = req._http_response._content.decode()
             d = {}
-            d['img'] = "{}.png".format(coin.lower())
+            d['img'] = "icons/{}.png".format(coin.lower())
             d['price'] = "$ {:.2f}".format(round(float(data.split('"last":')[1].split(",")[0]), 2))
             real_change = round(float(data.split('"change":')[1].split(",")[0].split(":")[1])*100, 2)
             if real_change > 0:
