@@ -48,11 +48,8 @@ Interface, port, and refresh rate may be changed with environment variables with
 
 ## To do
 
-I created this small project after becoming frustrated with the lack of available web apps for viewing simple crypto market data. I wanted something minimalist and simple that could run on relatively low resources, which I could self-host. This project is in need of contribution.
 - Add support for multiple fiat currencies via an external library
-- Create neater setup script
-- Add sorting ability to tables
-- Add support for more coins
+- Add CSS themes
 
 ## Attribution
 
