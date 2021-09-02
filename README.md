@@ -2,7 +2,7 @@
 A minimalist, self-hosted web app for viewing cryptocurrency data.
 [Demo](http://135.181.148.230:38505/)
 
-![enter image description here](https://raw.githubusercontent.com/jakedolan443/cryptohttp/main/screenshots/screenshot2.png)
+![enter image description here](https://raw.githubusercontent.com/jakedolan443/cryptohttp/main/screenshots/screenshot3.png)
 CryptoHTTP is a Flask webserver which uses the `cryptowatch-sdk` module with Kraken's API to deliver a simplistic, minimalist dashboard showing current market data.
 
 Kraken provides a free API, so no API-key is required. By default, the server sends an API request once an hour. Using an API key will increase your limit. [More info](https://support.kraken.com/hc/en-us/articles/360022839451-Generate-API-keys)
@@ -25,7 +25,7 @@ The default port is 8080.
 
 The default refresh rate is 3600secs.
 
-The file `coins.conf` contains a line by line list of coins, in order, displayed on the webserver, e.g.
+The file `config/coins.conf` contains a line by line list of coins, in order, displayed on the webserver, e.g.
 ```
 BTC
 ETH
