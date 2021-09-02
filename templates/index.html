@@ -8,7 +8,7 @@
 <script>
 $(document).ready( function () {
        $('#example').dataTable({
-       "pageLength": 10,
+       "pageLength": 15,
        "lengthChange": false, 
        "info":false,
        "bFilter": false,
@@ -16,15 +16,15 @@ $(document).ready( function () {
    })});
 </script>
 <font size="2" face="Courier New" >
-<a href="https://github.com/jakedolan443/cryptohttp">View Source</a>
+<a href="https://github.com/jakedolan443/cryptohttp" style="text-align: left">View Source</a>
 <br>
-<body style="width: 75%; height: 80%; text-align: center; margin-left:auto; margin-right:auto;" align="center">
 <br>
-<table id="example" class="display cryptotable" style="width: 100%" align="center" style="font-size: 32px">
+<div style="width:80%; margin:0 auto;">
+<table id="example" class="display cryptotable" style="font-size: 22px">
 <thead>
     <tr>
-        <th>Icon</th>
-        <th>Code</th>
+        <th class="disable-select">Icon</th>
+        <th class="disable-select">Code</th>
         <th class="disable-select">Name</th>
         <th class="disable-select">Price</th>
         <th class="disable-select">Change</th>
@@ -44,4 +44,4 @@ $(document).ready( function () {
 </table>
 </font>
 <br>
-</body>
+</div>
