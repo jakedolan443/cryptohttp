@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  cryptohttp:
+    container_name: cryptohttp
+    environment:
+      PORT: 8000
+    image: cryptohttp
+    ports:
+      - "8080:8000"
+    restart: unless-stopped
+    volumes:
+      - /config:/app/config
