@@ -16,7 +16,7 @@ class Server:
         threading.Thread(target=self.fetch_new_data).start()
         
     def read_coins_file(self):
-        with open("coins.conf", "r") as f:
+        with open("config/coins.conf", "r") as f:
             data = f.read()
         ls = []
         data = data.split("\n")
