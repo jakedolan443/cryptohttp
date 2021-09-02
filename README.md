@@ -46,10 +46,15 @@ docker-compose up -d
 
 Interface, port, and refresh rate may be changed with environment variables within `docker-compose.yaml`.
 
-## To do
+## Contribute
+This project is fully open to contribution! The current to-do list:
 
 - Add support for multiple fiat currencies via an external library
-- Add CSS themes
+- Add CSS themeing, e.g. light/dark mode
+- Portfolios
+- General optimisation of existing code
+
+If you are looking to contribute or have any feature ideas, contact me at jakedolan443@protonmail.com.
 
 ## Attribution
 
