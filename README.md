@@ -41,7 +41,7 @@ XMR
 git clone https://github.com/jakedolan443/cryptohttp
 cd cryptohttp
 docker build -t cryptohttp .
-docker-compose up -d
+docker-compose up -d (or) docker run --name=cryptohttp -d -v "$pwd":/app/config -p 8080:8000 --restart unless-stopped cryptohttp
 ```
 
 Interface, port, and refresh rate may be changed with environment variables within `docker-compose.yaml`.
