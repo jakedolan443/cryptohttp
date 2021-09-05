@@ -1,14 +1,17 @@
 $('#click_advance').click(function() {
     var theme = localStorage.getItem("theme");
-    if (theme == "light") {
+    if (theme == "dark") {
       // localStorage.setItem("theme","light");
-      localStorage.setItem("theme","dark");
-      $("body").toggleClass( "dark-mode" );
-    }
-    else {
+
       localStorage.setItem("theme","light");
       $("body").toggleClass( "light-mode" );
       $("body").removeClass( "dark-mode" );
+
+    }
+
+    else {
+      localStorage.setItem("theme","dark");
+      $("body").toggleClass( "dark-mode" );
     }
 
     // localStorage.setItem("theme","light");
