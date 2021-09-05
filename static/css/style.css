@@ -1,3 +1,4 @@
+
 .cryptotable.dataTable  {
     margin-top: 20px;
     font-family: 'Courier New';
@@ -14,8 +15,8 @@
 .cryptotable.dataTable td {
     text-align: left;
 }
-.cryptotable.dataTable thead .sorting, 
-.cryptotable.dataTable thead .sorting_asc, 
+.cryptotable.dataTable thead .sorting,
+.cryptotable.dataTable thead .sorting_asc,
 .cryptotable.dataTable thead .sorting_desc {
     background : none;
 }
@@ -25,4 +26,87 @@
    -khtml-user-select: none; /* Konqueror HTML */
    -moz-user-select: none; /* Firefox */
    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+
+.light-mode {
+  background: white;
+  --bgcolor:#121212;
+  --color: #121212;
+}
+
+.dark-mode {
+  background: #121212;
+  --bgcolor: white;
+  --color: white;
+}
+/* .fa-sun-o{
+  background: #121212;
+color: white;
+border-radius: 38px;
+padding: 10px;
+box-shadow: 5px 0px grey;
+
+}
+.fa-moon-o {
+  max-width: 26px ;
+  max-height:26px;
+  background: white;
+color: black;
+border-radius: 38px;
+padding: 10px;
+box-shadow: 5px 0px grey;
+} */
+.table-position{
+  width:80%;
+  margin:0 auto;
+}
+.font-table{
+  font-size: 2vw;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-toggle{
+    background-color:black;
+    transition:0.3s;
+    height:30px;
+    border-radius:30px;
+    width:80px;
+    padding:8px;
+}
+.button-toggle:hover{
+  cursor: pointer;
+}
+.button-toggle .circle{
+    height:30px;
+    width:30px;
+    background-color:white;
+    border-radius:100%;
+    transition:0.5s;
+}
+.button-toggle.active{
+    background-color: grey;
+}
+.button-toggle.active .circle{
+    margin-left:50px;
+}
+
+.contribute{
+    text-decoration: none;
+    text-align: left;
+    max-height: 16px;
+    border-radius: 36px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--color);
+}
+.contribute:hover {
+  transition:0.5s;
+  box-shadow: 10px 5px 5px grey;
 }
