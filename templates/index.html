@@ -1,26 +1,40 @@
 <!DOCTYPE html>
+
+<script src="https://use.fontawesome.com/2fb24c7815.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
 <link rel="stylesheet" href="css/jquery-ui.css" />
 <link rel="stylesheet" href="css/jquery.dataTables.css">
 <link rel="stylesheet" href="css/style.css">
+
 <script>
 $(document).ready( function () {
        $('#example').dataTable({
        "pageLength": 15,
-       "lengthChange": false, 
+       "lengthChange": false,
        "info":false,
        "bFilter": false,
        "bInfo": false
    })});
 </script>
+
+
+<body class="light-mode">
+<div class="top">
 <font size="2" face="Courier New" >
-<a href="https://github.com/jakedolan443/cryptohttp" style="text-align: left">View Source</a>
+
+<div  class="container" style="margin-top: 2vh;">
+  <a href="https://github.com/jakedolan443/cryptohttp" target="_blank" class="contribute"><i class="fa fa-github" aria-hidden="true" style="padding-right: 5px;"></i>Source code</a>
+    <div  id="click_advance" onclick="this.classList.toggle('active')" class="button-toggle">
+        <div class="circle"></div>
+    </div>
+</div>
+</div>
 <br>
 <br>
-<div style="width:80%; margin:0 auto;">
-<table id="example" class="display cryptotable" style="font-size: 22px">
+<div class="table-position">
+<table id="example" class="display cryptotable table-font" >
 <thead>
     <tr>
         <th class="disable-select">Icon</th>
@@ -45,3 +59,7 @@ $(document).ready( function () {
 </font>
 <br>
 </div>
+
+
+<script type="text/javascript" src="js/jquery-color.js"></script>
+</body>
