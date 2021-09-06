@@ -37,6 +37,28 @@ XMR
 
 ### Docker
 
+Prebuilt image:
+
+Docker run
+```
+docker run --name=cryptohttp -d -v "$pwd":/app/config -p 8080:8080 --restart unless-stopped ackr8/cryptohttp
+```
+Docker compose
+```
+version: '3.3'
+services:
+    cryptohttp:
+        container_name: cryptohttp
+        volumes:
+            - '$pwd:/app/config'
+        ports:
+            - '8080:8080'
+        restart: unless-stopped
+        image: ackr8/cryptohttp
+```
+
+Manually building the image:
+
 ```
 git clone https://github.com/jakedolan443/cryptohttp
 cd cryptohttp
