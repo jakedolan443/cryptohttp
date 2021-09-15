@@ -3,10 +3,10 @@ services:
   cryptohttp:
     container_name: cryptohttp
     environment:
-      PORT: 8000
+      PORT: 8080
     image: cryptohttp
     ports:
-      - "8080:8000"
+      - "8080:8080"
     restart: unless-stopped
     volumes:
       - /config:/app/config
