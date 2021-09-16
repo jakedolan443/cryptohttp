@@ -2,22 +2,27 @@
     margin-top: 20px;
     font-family: 'Courier New';
     font-size: 16px;
+    color: white
 }
 .cryptotable.dataTable thead {
+    text-align: left;
     margin-top: 20px;
     font-size: 23px;
-    background-color: #CFCFCF
+    background-color: #333941
 }
 .cryptotable.dataTable th {
     text-align: left;
+    background-color: #333941;
 }
 .cryptotable.dataTable td {
     text-align: left;
+    background-color: #333941;
+    color: white;
 }
 .cryptotable.dataTable thead .sorting, 
 .cryptotable.dataTable thead .sorting_asc, 
 .cryptotable.dataTable thead .sorting_desc {
-    background : none;
+    background : #333941;
 }
 .disable-select {
     user-select: none; /* supported by Chrome and Opera */

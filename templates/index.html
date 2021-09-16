@@ -11,16 +11,18 @@ $(document).ready( function () {
        "pageLength": 15,
        "lengthChange": false, 
        "info":false,
+       "paging":false,
        "bFilter": false,
        "bInfo": false
    })});
 </script>
+<body style="background-color: #2c3239;">
 <font size="2" face="Courier New" >
 <a href="https://github.com/jakedolan443/cryptohttp" style="text-align: left">View Source</a>
 <br>
 <br>
 <div style="width:80%; margin:0 auto;">
-<table id="example" class="display cryptotable" style="font-size: 22px">
+<table id="example" class="display cryptotable compact stripe row-border" style="font-size: 22px">
 <thead>
     <tr>
         <th class="disable-select">Icon</th>
@@ -33,7 +35,7 @@ $(document).ready( function () {
     <tbody>
     {% for entry in data %}
         <tr>
-            <td><img src="{{ entry['img'] }}"></img></td>
+            <td style="background-color: #333941"><img src="{{ entry['img'] }}"></img></td>
             <td class="disable-select">{{ entry['code'] }}</td>
             <td class="disable-select">{{ entry['name'] }}</td>
             <td class="disable-select">{{ entry['price'] }}</td>
@@ -45,3 +47,4 @@ $(document).ready( function () {
 </font>
 <br>
 </div>
+</body>
