@@ -71,10 +71,9 @@ Interface, port, and refresh rate may be changed with environment variables with
 ## Contribute
 This project is fully open to contribution! The current to-do list:
 
-- Add support for multiple fiat currencies via an external library
-- Add CSS themeing, e.g. light/dark mode
-- Portfolios
-- General optimisation of existing code
+- Cache API data 
+- CSS Themes
+- Add support for multiple fiat currency conversions (e.g. EUR, GBP)
 
 If you are looking to contribute or have any feature ideas, contact me at jakedolan443@protonmail.com.
 
