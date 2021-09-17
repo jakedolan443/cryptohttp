@@ -15,6 +15,12 @@ class Server:
         
         threading.Thread(target=self.fetch_new_data).start()
         
+    def query_coin_name(self, code):
+        try:
+            return self.__coin_names[code]
+        except KeyError:
+            return False
+        
     def read_coins_file(self):
         with open("config/coins.conf", "r") as f:
             data = f.read()
@@ -33,7 +39,7 @@ class Server:
             data = req._http_response._content.decode()
             d = {}
             d['img'] = "icons/{}.png".format(coin.lower())
-            d['price'] = "$ {:.2f}".format(round(float(data.split('"last":')[1].split(",")[0]), 2))
+            d['price'] = "{:.2f}".format(round(float(data.split('"last":')[1].split(",")[0]), 2))
             real_change = round(float(data.split('"change":')[1].split(",")[0].split(":")[1])*100, 2)
             if real_change > 0:
                 d['change_colour'] = "green"
@@ -47,6 +53,10 @@ class Server:
         self.__cache = ls.copy()
         time.sleep(self.refresh_rate)
         self.fetch_new_data()
+        
+    def get_graph_data(self, code):
+        return [{"date": "2018-04-28 17:03:04","value": 9.2090000000,}, {"date": "2018-04-28 18:03:15","value": 9.1870000000}]
+
         
     def get_data(self):
         return self.__cache
