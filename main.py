@@ -45,7 +45,7 @@ def serve():
 def market(code):
     coin_name = server.query_coin_name(code)
     if coin_name:
-        data = {"code":code, "name":coin_name, "icon":"{}.png".format(code.lower()), "colour":"#19e668", "price":50366.20}
+        data = server.get_coin_data(code)
         return flask.render_template("market.html", data=data)
     else:
         return flask.abort(404)
@@ -53,8 +53,7 @@ def market(code):
 @app.route("/markets/<code>.json")
 def market_graph(code):
     data = server.get_graph_data(code)
-    print("YA")
-    return flask.render_template("market.html", data=data)
+    return flask.jsonify(data)
 
 
 if __name__ == "__main__":
