@@ -84,6 +84,8 @@ Cryptowatch SDK from https://github.com/cryptowatch/cw-sdk-python
 
 API from https://www.kraken.com
 
+Hightables library from https://github.com/dtao/HighTables
+
 Icons obtained from https://github.com/spothq/cryptocurrency-icons/ under Creative Commons License 
 
 ## Donate
