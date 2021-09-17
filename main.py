@@ -41,6 +41,20 @@ def serve():
     data = server.get_data()
     return flask.render_template("index.html", data=data)
 
+@app.route("/markets/<code>")
+def market(code):
+    coin_name = server.query_coin_name(code)
+    if coin_name:
+        data = server.get_coin_data(code)
+        return flask.render_template("market.html", data=data)
+    else:
+        return flask.abort(404)
+
+@app.route("/markets/<code>.json")
+def market_graph(code):
+    data = server.get_graph_data(code)
+    return flask.jsonify(data)
+
 
 if __name__ == "__main__":
     server = Server(refresh_rate)
