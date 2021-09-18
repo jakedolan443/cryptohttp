@@ -5,7 +5,7 @@ A minimalist, self-hosted web app for viewing cryptocurrency data.
 ![](https://raw.githubusercontent.com/jakedolan443/cryptohttp/main/screenshots/screen2.png)
 CryptoHTTP is a Flask webserver which uses the `cryptowatch-sdk` module with Kraken's API to deliver a simplistic, minimalist dashboard showing current market data.
 
-Kraken provides a free API, so no API-key is required, howvever, for frequent API calls (more than once an hour) you should setup an free API account. [Instructions](https://github.com/cryptowatch/cw-sdk-python#setup-your-credential-file)
+Kraken provides a free API, so no API-key is required, howvever, for frequent API calls (more than once an hour) you should setup a free API account. [Instructions](https://github.com/cryptowatch/cw-sdk-python#setup-your-credential-file)
 
 ## Setup
 
