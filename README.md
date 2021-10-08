@@ -26,7 +26,7 @@ The default interface is 0.0.0.0
 
 The default port is 8080.
 
-The default refresh rate is 3600secs.
+The default refresh rate is 60 seconds.
 
 The file `config/coins.conf` contains a line by line list of coins, in order, displayed on the webserver, e.g.
 ```
