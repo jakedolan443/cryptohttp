@@ -9,7 +9,7 @@ help_menu = "USAGE: ./cryptohttp <ARGS>\n  --host <HOST>\t\thost to bind to, def
 
 host = "0.0.0.0"
 port = 8080
-refresh_rate = 3600
+refresh_rate = 60
 
 for entry in sys.argv:
     try:
