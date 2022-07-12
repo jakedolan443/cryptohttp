@@ -1,6 +1,5 @@
 # CryptoHTTP
 
-**NOTE: This repository has been MOVED to [cryptohttp](https://github.com/jakedolan443/cryptohttp).**
 
 
 A minimalist, self-hosted web app for viewing cryptocurrency data.
