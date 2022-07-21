@@ -1,8 +1,8 @@
-# CryptoHTTP
+# WARNING!
+# This project has been replaced by [peluno](https://github.com/jakedolan443/peluno)
 
 
-
-A minimalist, self-hosted web app for viewing cryptocurrency data.
+CryptoHTTP is no longer maintained.
 
 ![](https://raw.githubusercontent.com/jakedolan443/cryptohttp/main/screenshots/screen.png)
 ![](https://raw.githubusercontent.com/jakedolan443/cryptohttp/main/screenshots/screen2.png)
